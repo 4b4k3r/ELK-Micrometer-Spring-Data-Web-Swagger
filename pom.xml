@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.jm.be</groupId>
     <artifactId>ws-jdbc-swagger-metrics</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <name>ws-jdbc-swagger-metrics</name>
     <description>Spring Boot + jdbc Template + Swagger + Metrics</description>
 
@@ -28,7 +28,18 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-elastic</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
@@ -49,5 +60,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

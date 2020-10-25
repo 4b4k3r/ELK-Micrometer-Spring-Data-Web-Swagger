@@ -2,6 +2,7 @@ package com.jm.be.controller;
 
 import com.jm.be.model.Item;
 import com.jm.be.service.ItemService;
+import io.micrometer.core.annotation.Timed;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -9,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/item")
+@Timed
 public class ItemController
 {
     @Autowired
