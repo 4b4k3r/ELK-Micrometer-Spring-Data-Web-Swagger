@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.jm.be</groupId>
     <artifactId>ws-jdbc-swagger-metrics</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
     <name>ws-jdbc-swagger-metrics</name>
     <description>Spring Boot + jdbc Template + Swagger + Metrics</description>
 
