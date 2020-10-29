@@ -10,12 +10,13 @@
     </parent>
     <groupId>com.jm.be</groupId>
     <artifactId>ws-jdbc-swagger-metrics</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4</version>
     <name>ws-jdbc-swagger-metrics</name>
     <description>Spring Boot + jdbc Template + Swagger + Metrics</description>
 
     <properties>
         <java.version>1.8</java.version>
+        <springfox-version>2.7.0</springfox-version>
     </properties>
 
     <dependencies>
@@ -49,6 +50,16 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${springfox-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${springfox-version}</version>
         </dependency>
     </dependencies>
 
